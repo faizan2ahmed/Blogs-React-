@@ -1,5 +1,4 @@
 import {Link} from "react-router-dom";
-import BlogContext from './context/BlogContext';
 
 //sfc == state-less functional component
 
@@ -9,10 +8,10 @@ const BlogList = ({blogs,title, handleDelete}) => {
 
     // console.log(props,blogs)
     
-
  
     return ( 
-        <BlogContext.Provider value={blogs}>
+        
+        
         <div className="blog-list">
             <h2>{title}</h2>
             {blogs.map((blog)=>(
@@ -29,7 +28,6 @@ const BlogList = ({blogs,title, handleDelete}) => {
                 </div>
             ))}
         </div>
-        </BlogContext.Provider>
      );
 }
  

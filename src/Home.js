@@ -1,9 +1,9 @@
 import BlogList from './BlogList';
-import useFetch from './useFetch';
- const Home = () => {
-    const {data: blogs,isPending,error} = useFetch('http://localhost:8000/blogs');
 
-    return ( 
+ const Home = ({blogs, isPending, error}) => {
+    
+
+    return (
             <div className="home">
                 {error && <div>
                     {error}    
@@ -15,7 +15,8 @@ import useFetch from './useFetch';
                 {blogs && <BlogList blogs={blogs.filter((blogs)=>{
                     if(blogs.author==="Faizan"){
                         return true;
-                    };
+                    }
+                    return false;
                 })} title={"Faizan's Blogs!"} />}
             </div>
      );
