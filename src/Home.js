@@ -1,7 +1,6 @@
 import BlogList from './BlogList';
 
  const Home = ({blogs, isPending, error}) => {
-    
 
     return (
             <div className="home">
