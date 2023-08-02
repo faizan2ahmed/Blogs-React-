@@ -5,11 +5,15 @@
   margin: 0;
   font-family: "Quicksand";
   color: #333;
+  text-align: justify;
 }
 
-.App{
+html{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background: url(D:\Internship\React\Basics\my-first-app\images\wp9522349-light-minimalist-wallpapers.jpg)  no-repeat center center/ cover;
-  height: 100vh;
+  height: auto;
 }
 
 .navbar {
@@ -18,13 +22,15 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #333333
+  border-bottom: 2px solid #333333
 }
 .navbar h1 {
+  font-size: 1.6em;
   color: #f1356d;
 }
 .navbar .links {
   margin-left: auto;
+  font-weight: 500;
 }
 .navbar a {
   margin-left: 16px;
@@ -43,22 +49,134 @@
 /* Blog previews / list */
 
 .blog-list h2{
+  font-size: 1.4em;
   border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
+  background-color: rgba(221, 239, 246, 0.315);
 }
 
 .blog-preview{
-  padding: 10px 16px;
+  padding: 10px 30px;
   margin: 20px 0;
   /* border-bottom: 1px solid #333333; */
 }
 
 .blog-preview:hover{
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 1px 3px 5px rgba(0, 46, 106, 0.5);
 }
 
 .blog-preview h2{
-  font-size: 20px;
+  font-size: 1.1em;
   color: #f1356d;
   margin-bottom: 8px;
   border-bottom: none;
+  border-top: none;
+  background-color: rgba(0,0,0,0);
+}
+
+.blog-preview p{
+  font-weight:500;
+  text-decoration: underline;
+}
+
+.blog-preview a{
+  text-decoration: none;
+}
+
+.content h2{
+  justify-content: center;
+  display: flex;
+}
+
+.blog-preview h2{
+  /* justify-content: left; */
+  display: block;
+}
+
+article{
+  justify-content: center;
+  display: grid;
+}
+
+.blog-details p{
+  justify-content: center;
+  display: flex;
+  padding:0px 30px;
+  font-weight:500;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-size:1.06em;
+}
+
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin: 1.05em 15em;
+}
+
+/* Forms */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  display:block;
+}
+.create label {
+  text-align: left;
+  display: block;
+  font-weight: 500;
+}
+.create h2 {
+  font-size: 1.4em;
+  color: #f1356d;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
+  background-color: rgba(221, 239, 246, 0.315);
+}
+.create input, .create textarea, .create select {
+  font-weight: 500;
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin: 1em 9em;
+}
+
+form{
+  display: grid;
+}
+
+.inputBox{
+  display:block;
+}
+
+option{
+  font-weight: 500;
 }

@@ -5,6 +5,7 @@ import Create from './Create';
 import BlogDetails from './BlogDetails';
 import useFetch from './useFetch';
 import BlogContext from './context/BlogContext';
+import NotFound from './notFound';
 
 function App() {
   const {data: blogs,isPending,error} = useFetch('http://localhost:8000/blogs');
@@ -24,6 +25,9 @@ function App() {
               </Route>
               <Route exact path="/blogs/:id">
                 <BlogDetails/>
+              </Route>
+              <Route path="*">
+                <NotFound/>
               </Route>
             </Switch>
           </div>
